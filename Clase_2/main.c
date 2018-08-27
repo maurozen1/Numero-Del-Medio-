@@ -23,7 +23,8 @@ int main()
     if(numeroDos < minimo)
     {
         minimo = numeroDos;
-    }else
+    }
+    else
     {
         if ( numeroDos > maximo)
         {
@@ -37,7 +38,8 @@ int main()
     if(numeroTres < minimo)
     {
         minimo = numeroTres;
-    }else
+    }
+    else
     {
         if ( numeroTres > maximo)
         {
@@ -45,12 +47,28 @@ int main()
         }
     }
 
-    if(numeroDelMedio > minimo & numeroDelMedio < maximo)
+    if(numeroUno > minimo && numeroUno < maximo)
     {
-
+        numeroDelMedio= numeroUno;
+        printf("El numero del medio es: %d",numeroDelMedio);
     }
+    else
+    {
+        if(numeroDos > minimo && numeroDos < maximo)
+        {
+            numeroDelMedio= numeroDos;
+            printf("El numero del medio es: %d",numeroDelMedio);
+        }
+        else
+        {
+            if(numeroTres > minimo && numeroTres < maximo)
+            {
+                numeroDelMedio= numeroTres;
+                printf("El numero del medio es: %d",numeroDelMedio);
+            }
 
 
-
-    return 0;
-}
+        }
+    }
+        return 0;
+        }
